@@ -13,5 +13,5 @@ COPY ./pyproject.toml ./poetry.lock* /app/
 
 RUN poetry install --no-root --no-dev
 
-COPY ./{{cookiecutter.pkg_name}} /app
+COPY ./{{cookiecutter.pkg_name}} /{{cookiecutter.pkg_name}}
 COPY .env /
