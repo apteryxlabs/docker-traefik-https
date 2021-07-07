@@ -1,0 +1,8 @@
+{
+  "project_name": "fastapi-docker-traefik-https",
+  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "pkg_name": "{{ cookiecutter.project_slug|replace('-', '') }}",
+  "use_mongo": ["YES", "NO"],
+  "use_cors": ["YES", "NO"],
+  "add_jupyterlab": ["YES", "NO"]
+}
