@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from motor.motor_asyncio import AsyncIOMotorClient
 
-from {{ cookiecutter.pkg_name }}.core.config import settings
+from app.core.config import settings
 
 
 
@@ -43,4 +43,4 @@ if __name__ == '__main__':
     import uvicorn
 
     dotenv.load_dotenv('../.env.backend')
-    uvicorn.run('{{cookiecutter.pkg_name}}.main:app', host="0.0.0.0", port=80, reload=True)
+    uvicorn.run('app.main:app', host="0.0.0.0", port=80, reload=True)

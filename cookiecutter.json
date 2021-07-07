@@ -1,8 +1,7 @@
 {
   "project_name": "fastapi-docker-traefik-https",
-  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
-  "directory_name": "{{ cookiecutter.project_slug}}",
-  "pkg_name": "{{ cookiecutter.project_slug|replace('-', '') }}",
+  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}",
+  "directory_name": "{{cookiecutter.project_slug}}",
   "domain_name": "example.com",
   "author_email": "me@example.com",
   "use_mongo": [

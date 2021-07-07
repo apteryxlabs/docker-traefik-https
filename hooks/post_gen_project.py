@@ -15,7 +15,7 @@ def remove(filepath):
 create_db = '{{cookiecutter.use_mongo}}' == 'YES'
 
 if not create_db:
-    db_path = os.path.join(os.getcwd(), '{{cookiecutter.pkg_name}}', 'database.py')
+    db_path = os.path.join(os.getcwd(), 'app', 'database.py')
     remove(db_path)
 
 
