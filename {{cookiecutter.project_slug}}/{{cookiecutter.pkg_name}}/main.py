@@ -42,5 +42,5 @@ if __name__ == '__main__':
     import dotenv
     import uvicorn
 
-    dotenv.load_dotenv('../..env.backend')
+    dotenv.load_dotenv('../.env.backend')
     uvicorn.run('{{cookiecutter.pkg_name}}.main:app', host="0.0.0.0", port=80, reload=True)
