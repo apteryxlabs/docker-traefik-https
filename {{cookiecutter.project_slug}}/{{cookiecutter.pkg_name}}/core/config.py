@@ -11,13 +11,15 @@ class Settings(BaseSettings):
     @validator("BACKEND_CORS_ORIGINS", pre=True)
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:
         if isinstance(v, str) and not v.startswith("["):
-            return [i.strip() for i in v.split(",")]
+            http = [i.strip() for i in v.split(",")]
+            https = [i.replace('http','https') for i in http]
+            return http + https
         elif isinstance(v, (list, str)):
             return v
         raise ValueError(v)
     {% endif %}
 
-    {% if cookiecutter.use_mongo %}
+    {% if cookiecutter.use_mongo -%}
     MONGO_USERNAME: str
     MONGO_PASSWORD: str
     MONGO_CLUSTER: str
