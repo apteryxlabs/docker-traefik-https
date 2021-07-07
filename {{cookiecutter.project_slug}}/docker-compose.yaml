@@ -6,7 +6,7 @@ services:
     restart: always
     image: apteryx/docker_traefik_tiangolo:v1
     env_file:
-      - ..env
+      - .env
     labels:
       # Enable Traefik for this specific "backend" service
       - traefik.enable=true
