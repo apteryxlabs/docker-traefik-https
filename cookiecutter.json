@@ -1,8 +1,18 @@
 {
   "project_name": "fastapi-docker-traefik-https",
   "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "directory_name": "{{ cookiecutter.project_slug}}",
   "pkg_name": "{{ cookiecutter.project_slug|replace('-', '') }}",
+  "domain_name": "example.com",
+  "author_email": "me@example.com",
   "use_mongo": ["YES", "NO"],
   "use_cors": ["YES", "NO"],
-  "add_jupyterlab": ["YES", "NO"]
+  "add_jupyterlab": ["YES", "NO"],
+  "MONGO_USERNAME": "admin",
+  "MONGO_PASSWORD": "password",
+  "MONGO_CLUSTER": "cluster0",
+  "MONGO_DB": "myDB",
+  "MONGO_COLLECTION": "myCol"
 }
+
+

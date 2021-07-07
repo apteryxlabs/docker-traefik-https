@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Body
 
-{%- if cookiecutter.use_cors == 'YES' -%}
+{% if cookiecutter.use_cors == 'YES' %}
 from fastapi.middleware.cors import CORSMiddleware
 {% endif %}
 
@@ -13,7 +13,7 @@ from {{ cookiecutter.pkg_name }}.core.config import settings
 def get_application():
     _app = FastAPI(title=settings.PROJECT_NAME)
 
-    {%- if cookiecutter.use_cors == 'YES' -%}
+    {% if cookiecutter.use_cors == 'YES' %}
     _app.add_middleware(
         CORSMiddleware,
         allow_origins=[str(origin) for origin in settings.BACKEND_CORS_ORIGINS],
@@ -28,7 +28,8 @@ def get_application():
 
 app = get_application()
 
-{%- if cookiecutter.use_mongo == 'YES' -%}
+{% if cookiecutter.use_mongo == 'YES' %}
+
 MONGO_CLIENT = AsyncIOMotorClient(settings.MONGO_URI)
 {% endif %}
 
