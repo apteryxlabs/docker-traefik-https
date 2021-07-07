@@ -1,6 +1,6 @@
-# learn_kubernetes
+# Docker_Traefik_HTTPS
 
-This project was generated via [manage-fastapi](https://ycd.github.io/manage-fastapi/)! :tada:
+This is a template (in progress) for quickly generating https-compatible FastAPI web apps.
 
 ## License
 
