@@ -1,4 +1,4 @@
-# Docker_Traefik_HTTPS
+# FastAPI-Docker-Traefik-HTTPS
 
 This is a template (in progress) for quickly generating https-compatible FastAPI web apps.
 
