@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "learn_kubernetes"
+name = "{{cookiecutter.pkg_name}}"
 version = "0.1.0"
 description = ""
 authors = ["apteryxlabs <matthew@apteryxlabs.com>"]
