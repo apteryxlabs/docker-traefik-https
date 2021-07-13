@@ -6,7 +6,7 @@
 </p>
 
 
-This is a cookiecutter template for quickly generating https-compatible FastAPI web apps. It pre-configures [Traefik](https://doc.traefik.io/traefik/) and the relevant [Docker Compose](https://docs.docker.com/compose/) files to save you time writing boilerplate. We wrote it to save time when deploying new APIs, while keeping things secure. 
+This is a cookiecutter template for quickly generating https-compatible FastAPI web apps. It pre-configures [Traefik](https://doc.traefik.io/traefik/) and the relevant [Docker Compose](https://docs.docker.com/compose/) files and boilerplate. 
 
 This does NOT write your site for you - that would be magic 🧙
 
